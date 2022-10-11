@@ -4,13 +4,16 @@ import QuizDetails from '../QuizDetails/QuizDetails';
 import { toast } from 'react-toastify';
 
 const Quiz = () => {
-    const [rightAns, setRightAns] = useState(0)
+    const [rightAns, setRightAns] = useState(0);
+    const [wrongAns, setWrongAns] = useState(0);
+    const [answered, setAnswered] = useState(0);
 
     const quizResponse = useLoaderData();
     const quizData = quizResponse.data;
     const { name, questions, total } = quizData;
 
     const handleClick = (option, correctAnswer) => {
+        setAnswered(answered + 1);
         if (option === correctAnswer) {
             toast.success('You are right!')
             setRightAns(rightAns + 1);
@@ -18,6 +21,7 @@ const Quiz = () => {
         }
         else {
             toast.error("You've choosen the wrong option")
+            setWrongAns(wrongAns + 1);
         }
     }
 
@@ -56,7 +60,12 @@ const Quiz = () => {
                 <p className="text-base text-gray-700 md:text-lg">
                     Total Questions: {total}
                 </p>
-                {rightAns > 0 && <h5 className='inline-block text-xl mt-2 bg-green-500 text-white font-semibold px-3 py-1 rounded-lg'>Right Answers Yet : {rightAns}</h5>}
+                {answered > 0 &&
+                    <div className='text-center'>
+                        <h5 className='md:inline-block text-xl mt-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold px-3 py-1 rounded-lg md:mr-2'>Your Score :</h5>
+                        <h5 className='md:inline-block text-xl mt-2 bg-green-500 text-white font-semibold px-3 py-1 rounded-lg md:mr-2'>Right : {rightAns} / {answered}</h5>
+                        <h5 className='md:inline-block text-xl mt-2 bg-red-500 text-white font-semibold px-3 py-1 rounded-lg'>Wrong: {wrongAns} / {answered}</h5>
+                    </div>}
             </div>
             <div className="grid gap-10 sm:grid-cols-1 lg:grid-cols-1">
                 {
