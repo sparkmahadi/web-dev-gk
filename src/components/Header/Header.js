@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="relative">
+        <div data-aos="zoom-out" className="relative">
             <img
                 src="hero-image.png"
                 className="absolute inset-0 object-cover w-full h-full"

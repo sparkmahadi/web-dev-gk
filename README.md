@@ -1,6 +1,6 @@
 # Web Dev GK | React App
 
-- Live site:
+- Live site: https://web-dev-gk.netlify.app/
 
 ### Core Features:
 - The project is about a quiz practicing website.
@@ -16,3 +16,4 @@
 - React Router
 - Toastify
 - Heroicons
+- AOS

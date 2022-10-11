@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Card.css'
 
 const Card = ({ quiz }) => {
     const { id, name, logo, total } = quiz
     return (
-        <div className="bg-sky-100 rounded">
+        <div data-aos="zoom-in" className="bg-teal-900 hover:bg-sky-700 rounded drop-shadow-lg">
             <div>
                 <img
                     src={logo}
@@ -13,11 +14,11 @@ const Card = ({ quiz }) => {
                 />
             </div>
             <div className="px-5 py-2 flex flex-col">
-                <div className="inline-block mb-3 text-sky-500 rounded-lg"
+                <div className="inline-block mb-3 text-white rounded-lg"
                 ><p className="text-2xl text-center"><span className='uppercase font-bold'>{name}</span></p>
-                    <p className='text-center text-md font-semibold'>Questions: {total}</p>
+                    <p className='text-center text-md'>Questions: {total}</p>
                 </div>
-                <Link to={`/topic/${id}`} className='bg-blue-500 hover:bg-sky-600 rounded-lg text-white text-center font-semibold'>Start Practice</Link>
+                <Link to={`/topic/${id}`} className='bg-blue-500 hover:bg-sky-600 rounded-lg text-white text-center font-semibold py-1'>Start Practice</Link>
             </div>
         </div>
     );

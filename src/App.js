@@ -1,3 +1,5 @@
+import Aos from 'aos';
+import { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
@@ -11,6 +13,12 @@ import Main from './layout/Main';
 
 
 function App() {
+
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, [])
+
   const router = createBrowserRouter([
     {
       path: '/',
