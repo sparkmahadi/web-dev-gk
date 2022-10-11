@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Nav.css'
 
 const Nav = () => {
@@ -8,11 +8,10 @@ const Nav = () => {
         <div className='my-nav'>
             <div className='px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
                 <div className='relative flex items-center justify-between'>
-                    <Link
+                    <Link className='inline-flex items-center'
                         to='/'
                         aria-label='Smart Home'
                         title='Smart Home'
-                        className='inline-flex items-center'
                     >
                         <img src="WebDevIcon.png" className='w-8 h-8 mt-1' alt="" />
                         <span className='ml-2 text-2xl font-bold tracking-wide text-white uppercase'>
@@ -21,44 +20,44 @@ const Nav = () => {
                     </Link>
                     <ul className='flex items-center hidden space-x-8 lg:flex'>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/home'
                                 aria-label='Home'
                                 title='Home'
-                                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-white transition-colors  hover:text-deep-purple-accent-400 px-2 py-1 rounded-lg'
                             >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/topics'
                                 aria-label='Topics'
                                 title='Topics'
-                                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-white transition-colors  hover:text-deep-purple-accent-400 px-2 py-1 rounded-lg'
                             >
                                 Topics
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/statistics'
                                 aria-label='Statistics'
                                 title='Statistics'
-                                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-white transition-colors  hover:text-deep-purple-accent-400 px-2 py-1 rounded-lg'
                             >
                                 Statistics
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/blog'
                                 aria-label='Blog'
                                 title='Blog'
-                                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-white transition-colors  hover:text-deep-purple-accent-400 px-2 py-1 rounded-lg'
                             >
                                 Blog
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                     <div className='lg:hidden'>
@@ -156,7 +155,7 @@ const Nav = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

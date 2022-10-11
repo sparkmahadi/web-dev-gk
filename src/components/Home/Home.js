@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import { QuizContext } from './../../App';
 
 const Home = () => {
+
     return (
         <div>
             <Header></Header>

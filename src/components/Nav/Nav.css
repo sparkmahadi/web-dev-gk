@@ -1,3 +1,8 @@
 .my-nav {
     background-color: #004e6d;
 }
+
+.active {
+    background-color: rgba(255, 255, 255, 0.938);
+    color: #004e6d;
+}
