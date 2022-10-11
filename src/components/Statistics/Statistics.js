@@ -9,7 +9,7 @@ const Statistics = () => {
     const questions = useContext(QuizContext);
     return (
         <div className='min-h-screen'>
-            <div className='m-6 md:my-10'>
+            <div data-aos="fade-left" className='m-6 md:my-10'>
                 <h4 className='text-2xl text-center font-semibold'>Displayed below is a statistics of the questions available in our quiz topics.</h4>
                 <p className='px-10 text-center'>Verical axis shows the total number of questions and the horizontal axis shows the topic's name.</p>
 

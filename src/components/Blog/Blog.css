@@ -3,3 +3,8 @@
 .my-blog {
     font-family: 'Nunito Sans', sans-serif;
 }
+
+.custom-bg {
+    background-color: #355c7d;
+    color: white;
+}

@@ -5,7 +5,7 @@ import './Card.css'
 const Card = ({ quiz }) => {
     const { id, name, logo, total } = quiz
     return (
-        <div data-aos="zoom-in" className="bg-teal-900 hover:bg-sky-700 rounded drop-shadow-lg">
+        <div data-aos="zoom-in" className="my-nav hover:bg-sky-700 rounded drop-shadow-lg">
             <div>
                 <img
                     src={logo}
@@ -18,7 +18,7 @@ const Card = ({ quiz }) => {
                 ><p className="text-2xl text-center"><span className='uppercase font-bold'>{name}</span></p>
                     <p className='text-center text-md'>Questions: {total}</p>
                 </div>
-                <Link to={`/topic/${id}`} className='bg-blue-500 hover:bg-sky-600 rounded-lg text-white text-center font-semibold py-1'>Start Practice</Link>
+                <Link to={`/topic/${id}`} className='bg-blue-500 hover:bg-white rounded-lg text-white hover:text-teal-900 text-center font-semibold py-1'>Start Practice</Link>
             </div>
         </div>
     );
