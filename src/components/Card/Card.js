@@ -18,7 +18,7 @@ const Card = ({ quiz }) => {
                 ><p className="text-2xl text-center"><span className='uppercase font-bold'>{name}</span></p>
                     <p className='text-center text-md font-semibold'>Questions: {total}</p>
                 </div>
-                <Link to={`/topic/${id}`} className='bg-blue-500 rounded-lg text-white font-semibold'>Start Practice</Link>
+                <Link to={`/topic/${id}`} className='bg-blue-500 rounded-lg text-white text-center font-semibold'>Start Practice</Link>
             </div>
         </div>
     );
