@@ -9,13 +9,13 @@ const Statistics = () => {
     const questions = data.data;
     // const { total } = questions;
     return (
-        <div>
+        <div className='mb-14'>
             <div className='m-6 md:my-10'>
                 <h4 className='text-2xl text-center font-semibold'>Displayed below is a statistics of the questions available in our quiz topics.</h4>
                 <p className='px-10 text-center'>Verical axis shows the total number of questions and the horizontal axis shows the topic's name.</p>
 
             </div>
-            <div className=' md:m-5 lg:mx-24 xl:mx-36'>
+            <div className='md:m-5 lg:mx-24 xl:mx-36'>
                 <ResponsiveContainer width="100%" height={400} >
                     <ComposedChart
                         width={1000}
