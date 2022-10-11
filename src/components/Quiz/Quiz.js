@@ -8,7 +8,7 @@ const Quiz = () => {
 
     const quizResponse = useLoaderData();
     const quizData = quizResponse.data;
-    const { id, name, logo, questions, total } = quizData;
+    const { name, questions, total } = quizData;
 
     const handleClick = (option, correctAnswer) => {
         if (option === correctAnswer) {

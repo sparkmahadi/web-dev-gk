@@ -13,7 +13,7 @@ const Nav = () => {
                         aria-label='Smart Home'
                         title='Smart Home'
                     >
-                        <img src="WebDevIcon.png" className='w-8 h-8 mt-1' alt="" />
+                        <img src="../WebDevIcon.png" className='w-8 h-8 mt-1' alt="" />
                         <span className='ml-2 text-2xl font-bold tracking-wide text-white uppercase'>
                             Web Dev GK
                         </span>
