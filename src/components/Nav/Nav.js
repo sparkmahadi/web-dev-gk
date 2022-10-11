@@ -93,7 +93,7 @@ const Nav = () => {
                                                 title='Company'
                                                 className='inline-flex items-center'
                                             >
-                                                <img src="WebDevIcon.png" className='w-8 h-8' alt="" />
+                                                <img src="../WebDevIcon.png" className='w-8 h-8' alt="" />
                                                 <span className='ml-2 text-xl font-bold tracking-wide text-white uppercase'>
                                                     Web Dev Gk
                                                 </span>

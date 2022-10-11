@@ -2,11 +2,12 @@ import React from 'react';
 import { CursorArrowRaysIcon, EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './QuizDetails.css'
 
 const QuizDetails = ({ questionData, idx, handleClick }) => {
     idx += 1;
     // console.log(questionData);
-    const { id, correctAnswer, question, options } = questionData;
+    const { correctAnswer, question, options } = questionData;
 
     const showAnswer = () => {
         toast.info(`Ans: ${correctAnswer}`)
@@ -24,7 +25,7 @@ const QuizDetails = ({ questionData, idx, handleClick }) => {
                         options.map((option, idx) =>
                             <div key={idx} onClick={() => handleClick(option, correctAnswer)} className='border border-dark hover:bg-blue-500 p-2 m-2 rounded-lg flex items-center'>
                                 <CursorArrowRaysIcon className='h-4 w-4 mr-2'></CursorArrowRaysIcon>
-                                <div className=''>{option}</div>
+                                <div className='word-control'>{option}</div>
                                 <ToastContainer position="top-center"
                                     autoClose={700}></ToastContainer>
                             </div>)
