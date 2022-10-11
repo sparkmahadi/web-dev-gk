@@ -4,11 +4,11 @@ Web Dev GK
 # Live site:
 
 # Project Summary:
-* The project is about a quiz practicing website.
-* It is created by using ReactJS wit TailwindCSS.
-* On the landing page, there is a navbar, a header and a section of topics for practicing quiz. The navbar contains a set of route which is made by using react router and finally a footer.
-* On statistics route, you will find a chart made by using recharts.
-* On Blog route, you will find some Q&A on related topics to React.
+- The project is about a quiz practicing website.
+- It is created by using ReactJS wit TailwindCSS.
+- On the landing page, there is a navbar, a header and a section of topics for practicing quiz. The navbar contains a set of route which is made by using react router and finally a footer.
+- On statistics route, you will find a chart made by using recharts.
+- On Blog route, you will find some Q&A on related topics to React.
 
 
 # Getting Started with Create React App

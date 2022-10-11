@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Bar, CartesianGrid, ComposedChart, Tooltip, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+import { QuizContext } from '../../layout/Main';
 
 
 
 const Statistics = () => {
-    const data = useLoaderData();
-    const questions = data.data;
-    // const { total } = questions;
+    const questions = useContext(QuizContext);
     return (
-        <div className='mb-14'>
+        <div className='min-h-screen'>
             <div className='m-6 md:my-10'>
                 <h4 className='text-2xl text-center font-semibold'>Displayed below is a statistics of the questions available in our quiz topics.</h4>
                 <p className='px-10 text-center'>Verical axis shows the total number of questions and the horizontal axis shows the topic's name.</p>

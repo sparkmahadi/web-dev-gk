@@ -4,9 +4,6 @@ import Header from '../Header/Header';
 import { QuizContext } from './../../App';
 
 const Home = () => {
-    // const { quizResponse } = useContext(QuizContext);
-    // const quizResponse = useLoaderData();
-    // const quizes = quizResponse.data;
     return (
         <div>
             <Header></Header>

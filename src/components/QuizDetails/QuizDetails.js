@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CursorArrowRaysIcon, EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const QuizDetails = ({ questionData, idx }) => {
+const QuizDetails = ({ questionData, idx, handleClick }) => {
     idx += 1;
     // console.log(questionData);
     const { id, correctAnswer, question, options } = questionData;
@@ -11,15 +11,7 @@ const QuizDetails = ({ questionData, idx }) => {
     const showAnswer = () => {
         toast.info(`Ans: ${correctAnswer}`)
     }
-    const handleClick = option => {
-        if (option === correctAnswer) {
-            toast.success('You are right!')
 
-        }
-        else {
-            toast.error("You've choosen the wrong option")
-        }
-    }
     return (
         <div className='p-6 border rounded shadow-sm'>
             <div className="flex justify-between">
@@ -30,7 +22,7 @@ const QuizDetails = ({ questionData, idx }) => {
                 <div className='grid grid-cols-2 gap-2 lg:px-44'>
                     {
                         options.map((option, idx) =>
-                            <div key={idx} onClick={() => handleClick(option)} className='bg-sky-100 hover:bg-sky-300 p-2 m-2 rounded-lg flex items-center'>
+                            <div key={idx} onClick={() => handleClick(option, correctAnswer)} className='bg-sky-100 hover:bg-sky-300 p-2 m-2 rounded-lg flex items-center'>
                                 <CursorArrowRaysIcon className='h-4 w-4 mr-2'></CursorArrowRaysIcon>
                                 <div className=''>{option}</div>
                                 <ToastContainer position="top-center"
