@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import { Bar, CartesianGrid, ComposedChart, Tooltip, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 import { QuizContext } from '../../layout/Main';
 

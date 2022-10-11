@@ -3,7 +3,7 @@ import './Blog.css'
 
 const Blog = () => {
     return (
-        <div className='min-h-screen md:px-10 lg:px-44 xl:ps-96 my-blog'>
+        <div className='min-h-screen md:px-10 lg:px-44 2xl:px-80 my-blog'>
             <div data-aos="zoom-in" className='border border-cyan-400 p-5 m-5 rounded-lg shadow-lg custom-bg'>
                 <h2 className='text-xl pb-2'><span className='font-semibold'>Question : </span> What is the purpose of react router?</h2>
                 <p><span className='font-semibold'>Answer : </span> React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. It allows us to build a single-page web application with navigation without the page refreshing as the user navigates. React Router uses component structure to call components, which display the appropriate information.

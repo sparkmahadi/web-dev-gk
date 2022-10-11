@@ -31,15 +31,15 @@ const ErrorPage = () => {
                     ></polygon>
                 </svg>
                 <div className='max-w-md text-center'>
-                    <h2 className='mb-8 font-extrabold text-9xl text-gray-600'>
-                        <span className='sr-only'>Error</span>404
+                    <h2 className='mb-8  text-7xl text-gray-600 font-bold'>
+                        404 Error!
                     </h2>
-                    <p className='text-2xl font-semibold md:text-3xl mb-8'>
-                        Sorry, we couldn't find this page.
+                    <p className='text-2xl font-semibold md:text-3xl mb-8 bg-red-700 p-5 rounded-lg text-white'>
+                        Sorry, Page is not found. Please try a valid link.
                     </p>
                     <Link
                         to='/'
-                        className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'
+                        className='px-8 py-3 font-semibold rounded bg-green-700 text-white'
                     >
                         Back to homepage
                     </Link>

@@ -5,7 +5,7 @@ import './Nav.css'
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div data-aos="fade-right" className='my-nav'>
+        <div className='my-nav'>
             <div className='px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
                 <div className='relative flex items-center justify-between'>
                     <Link className='inline-flex items-center'

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Card.css'
 
 const Card = ({ quiz }) => {
     const { id, name, logo, total } = quiz
